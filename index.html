@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parrainage Business</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <span class="badge">Espace Parrainage</span>
+      <h1>Opportunités <span class="gradient-text">Business</span></h1>
+      <p class="hero-sub">Découvrez des offres exclusives sélectionnées pour entrepreneurs et professionnels ambitieux.</p>
+      <a href="#categories" class="btn-hero">Explorer les offres</a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </header>
+
+  <!-- CATEGORIES -->
+  <section id="categories" class="categories">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Nos catégories</p>
+        <h2>À la recherche d'opportunités ?</h2>
+      </div>
+      <div class="cards-grid">
+
+        <div class="card" data-modal="banque">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/></svg>
+          </div>
+          <h3>Banque</h3>
+          <p>Ouvrez un compte professionnel et bénéficiez de jusqu'à <strong>160 €</strong> offerts.</p>
+          <span class="card-cta">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+
+        <div class="card" data-modal="compta">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 12h6M9 16h4"/></svg>
+          </div>
+          <h3>Comptabilité</h3>
+          <p>Création d'entreprise et gestion comptable simplifiées par des professionnels.</p>
+          <span class="card-cta">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+
+        <div class="card" data-modal="voyages">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Voyages</h3>
+          <p>Accédez à un club privé avec des réductions exclusives sur hôtels, croisières et plus.</p>
+          <span class="card-cta">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+
+        <div class="card" data-modal="afterwork">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Afterwork &amp; Réseautage</h3>
+          <p>Développez votre réseau professionnel lors d'événements conviviaux dans toute la France.</p>
+          <span class="card-cta">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+
+        <div class="card card-ai" data-modal="ia">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M8 12h8M12 8v8"/></svg>
+          </div>
+          <h3>Intelligence Artificielle</h3>
+          <p>Boostez votre productivité avec l'IA. Essayez Claude gratuitement pendant une semaine.</p>
+          <span class="card-cta">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Parrainage Business — Toutes les offres sont soumises aux conditions des programmes de parrainage respectifs.</p>
+  </footer>
+
+  <!-- ======= MODALS ======= -->
+
+  <!-- MODAL BANQUE -->
+  <div class="modal-overlay" id="modal-banque">
+    <div class="modal">
+      <button class="modal-close" aria-label="Fermer">&times;</button>
+      <div class="modal-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/></svg>
+      </div>
+      <span class="modal-badge">Banque Pro</span>
+      <h2>Qonto</h2>
+      <div class="modal-highlight">
+        <span class="gift">🎁</span>
+        <div>
+          <strong>Jusqu'à 160 € offerts</strong>
+          <p>à l'ouverture de votre compte professionnel</p>
+        </div>
+      </div>
+      <ul class="modal-list">
+        <li><span class="check">✓</span><span><strong>80 €</strong> dès la souscription à un abonnement Qonto et après 50 € de dépenses avec la carte physique dans les 2 mois.</span></li>
+        <li><span class="check">✓</span><span><strong>80 € supplémentaires</strong> dès 3 000 € de dépenses effectuées avec la carte physique au cours des 2 premiers mois.</span></li>
+      </ul>
+      <p class="modal-desc">Découvrez Qonto, le compte pro qui permet de mieux gérer vos finances.</p>
+      <a href="https://qonto.com/r/4zf7a2" target="_blank" rel="noopener" class="btn-primary">Ouvrir mon compte Qonto</a>
+      <p class="modal-note">Offre soumise aux conditions du programme de parrainage Qonto.</p>
+    </div>
+  </div>
+
+  <!-- MODAL COMPTABILITE -->
+  <div class="modal-overlay" id="modal-compta">
+    <div class="modal">
+      <button class="modal-close" aria-label="Fermer">&times;</button>
+      <div class="modal-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 12h6M9 16h4"/></svg>
+      </div>
+      <span class="modal-badge">Comptabilité</span>
+      <h2>L-Expert-Comptable.com</h2>
+      <p class="modal-desc">Créez et gérez votre entreprise en toute sérénité grâce à l'accompagnement de professionnels.</p>
+      <ul class="modal-list">
+        <li><span class="check">✓</span><span>Création d'entreprise simplifiée</span></li>
+        <li><span class="check">✓</span><span>Comptabilité en ligne et accompagnement dédié</span></li>
+        <li><span class="check">✓</span><span>Conseils fiscaux, sociaux et juridiques</span></li>
+        <li><span class="check">✓</span><span>Outils de gestion accessibles à distance</span></li>
+        <li><span class="check">✓</span><span>Tarifs compétitifs adaptés aux entrepreneurs</span></li>
+      </ul>
+      <div class="form-section">
+        <h4>Être contacté &amp; bénéficier de l'offre de bienvenue</h4>
+        <form id="form-compta" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nom</label>
+              <input type="text" name="nom" placeholder="Nom" required />
+            </div>
+            <div class="form-group">
+              <label>Prénom</label>
+              <input type="text" name="prenom" placeholder="Prénom" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="votre@email.com" required />
+          </div>
+          <div class="form-group">
+            <label>Téléphone</label>
+            <input type="tel" name="telephone" placeholder="+33 6 00 00 00 00" required />
+          </div>
+          <button type="submit" class="btn-primary btn-full">Envoyer ma demande</button>
+          <p class="form-success hidden" id="success-compta">✓ Votre demande a bien été envoyée. Nous vous contacterons rapidement.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL VOYAGES -->
+  <div class="modal-overlay" id="modal-voyages">
+    <div class="modal">
+      <button class="modal-close" aria-label="Fermer">&times;</button>
+      <div class="modal-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/><circle cx="12" cy="12" r="10"/></svg>
+      </div>
+      <span class="modal-badge">Club Privé</span>
+      <h2>Travel Advantage ✈️</h2>
+      <p class="modal-desc">Club privé de voyage offrant des réductions importantes sur hôtels, séjours, croisières et bien plus.</p>
+      <ul class="modal-list">
+        <li><span class="emoji">🌍</span><span>Réductions exclusives sur de nombreuses destinations</span></li>
+        <li><span class="emoji">🏨</span><span>Comparaison des tarifs avec les plateformes traditionnelles</span></li>
+        <li><span class="emoji">🚢</span><span>Croisières, séjours, transferts et offres flash</span></li>
+        <li><span class="emoji">🎟️</span><span>Réservation d'activités et d'expériences partout dans le monde</span></li>
+        <li><span class="emoji">✨</span><span>Accès aux Life Experiences — séjours et expériences exclusifs</span></li>
+        <li><span class="emoji">🛍️</span><span>Lifestyle Mall — remises négociées auprès de nombreuses marques partenaires</span></li>
+      </ul>
+      <p class="modal-desc">Grâce au <strong>Guest Pass</strong>, découvrez gratuitement une partie de la plateforme Membership.</p>
+      <div class="form-section">
+        <h4>Demander une démonstration</h4>
+        <form id="form-voyages" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nom</label>
+              <input type="text" name="nom" placeholder="Nom" required />
+            </div>
+            <div class="form-group">
+              <label>Prénom</label>
+              <input type="text" name="prenom" placeholder="Prénom" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Téléphone</label>
+            <input type="tel" name="telephone" placeholder="+33 6 00 00 00 00" required />
+          </div>
+          <button type="submit" class="btn-primary btn-full">Demander une démo</button>
+          <p class="form-success hidden" id="success-voyages">✓ Votre demande a bien été envoyée. Nous vous contacterons rapidement.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL AFTERWORK -->
+  <div class="modal-overlay" id="modal-afterwork">
+    <div class="modal">
+      <button class="modal-close" aria-label="Fermer">&times;</button>
+      <div class="modal-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <span class="modal-badge">Événements</span>
+      <h2>Afterwork Business &amp; Voyages</h2>
+      <p class="modal-desc">Développez votre réseau professionnel lors d'événements conviviaux organisés dans de nombreuses villes en France.</p>
+      <ul class="modal-list">
+        <li><span class="emoji">✨</span><span>Rencontrez des entrepreneurs, indépendants et porteurs de projets</span></li>
+        <li><span class="emoji">🤝</span><span>Échangez des idées, expériences et opportunités d'affaires</span></li>
+        <li><span class="emoji">📈</span><span>Développez votre réseau dans une ambiance détendue</span></li>
+        <li><span class="emoji">💼</span><span>Faites connaître votre activité et créez de nouvelles collaborations</span></li>
+        <li><span class="emoji">🌍</span><span>Accédez à un réseau national de membres et d'événements</span></li>
+      </ul>
+      <div class="modal-callout">
+        <p>📌 Lors de votre inscription, merci d'indiquer que vous êtes invité(e) par <strong>Valérie Decaille</strong>.</p>
+      </div>
+      <a href="https://linktr.ee/afterworkbusinessetvoyage" target="_blank" rel="noopener" class="btn-primary">Voir les prochains événements</a>
+    </div>
+  </div>
+
+  <!-- MODAL IA -->
+  <div class="modal-overlay" id="modal-ia">
+    <div class="modal modal-ia-theme">
+      <button class="modal-close" aria-label="Fermer">&times;</button>
+      <div class="modal-icon modal-icon-ai">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M8 12h8M12 8v8"/></svg>
+      </div>
+      <span class="modal-badge badge-ai">Intelligence Artificielle</span>
+      <h2>Claude AI ✦</h2>
+      <p class="modal-desc">Essayez <strong>Claude Cowork</strong> pendant une semaine et découvrez comment l'IA peut gérer vos fichiers, préparer vos documents et accomplir vos tâches répétitives à votre place.</p>
+      <ul class="modal-list">
+        <li><span class="emoji">📂</span><span>Gestion intelligente de vos fichiers</span></li>
+        <li><span class="emoji">📝</span><span>Préparation et rédaction de documents professionnels</span></li>
+        <li><span class="emoji">⚡</span><span>Automatisation de vos tâches répétitives</span></li>
+        <li><span class="emoji">🎯</span><span>Une semaine d'essai gratuit pour découvrir la puissance de l'IA</span></li>
+      </ul>
+      <a href="https://claude.ai/referral/dg3V8Nz6bw?s=cowork&v=apps" target="_blank" rel="noopener" class="btn-primary btn-ai">Essayer Claude gratuitement</a>
+    </div>
+  </div>
+
+  <script src="motion.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
