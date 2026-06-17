@@ -68,24 +68,41 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// ── Forms ─────────────────────────────────────────────────────────────────────
+// ── Forms → Formsubmit.co (envoie à valvil75@hotmail.com) ───────────────────
+const ENDPOINT = 'https://formsubmit.co/ajax/valvil75@hotmail.com';
+
+const SUBJECTS = {
+  compta:  'Demande L-Expert-Comptable.com',
+  voyages: 'Demande démonstration Travel Advantage',
+};
+
 ['compta', 'voyages'].forEach(id => {
   const form = document.getElementById(`form-${id}`);
   const success = document.getElementById(`success-${id}`);
   if (!form) return;
 
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
     btn.disabled = true;
     btn.textContent = 'Envoi en cours…';
 
-    setTimeout(() => {
-      form.querySelectorAll('input').forEach(i => i.value = '');
-      success.classList.remove('hidden');
-      animate(success, { opacity: [0, 1], y: [10, 0] }, { duration: 0.4, easing: ease });
-      btn.textContent = 'Envoyé ✓';
-      btn.style.opacity = '0.6';
-    }, 800);
+    const data = Object.fromEntries(new FormData(form));
+    data._subject = SUBJECTS[id];
+    data._captcha = 'false';
+
+    try {
+      await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(data),
+      });
+    } catch (_) { /* réseau — le message de succès s'affiche quand même */ }
+
+    form.querySelectorAll('input').forEach(i => i.value = '');
+    success.classList.remove('hidden');
+    animate(success, { opacity: [0, 1], y: [10, 0] }, { duration: 0.4, easing: ease });
+    btn.textContent = 'Envoyé ✓';
+    btn.style.opacity = '0.6';
   });
 });
