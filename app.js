@@ -68,8 +68,8 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// ── Forms → Formsubmit.co (envoie à valvil75@hotmail.com) ───────────────────
-const ENDPOINT = 'https://formsubmit.co/ajax/valvil75@hotmail.com';
+// ── Forms → Formsubmit.co (envoie à valerie@nomenvi.com) ───────────────────
+const ENDPOINT = 'https://formsubmit.co/ajax/valerie@nomenvi.com';
 
 const SUBJECTS = {
   compta:  'Demande L-Expert-Comptable.com',

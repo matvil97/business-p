@@ -459,6 +459,86 @@ body {
 
 .modal-desc strong { color: var(--text); }
 
+.modal-link {
+  color: #818cf8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+.modal-link:hover { color: #a5b4fc; }
+
+/* ── Parrainage block (comptabilité) ── */
+.parrainage-block {
+  background: rgba(16,185,129,0.06);
+  border: 1px solid rgba(16,185,129,0.2);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.parrainage-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #34d399;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.parrainage-cards {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.parrainage-card {
+  flex: 1;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(16,185,129,0.15);
+  border-radius: 10px;
+  padding: 1rem 0.75rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.parrainage-card .p-icon { font-size: 1.8rem; }
+
+.parrainage-card strong {
+  font-size: 0.88rem;
+  color: var(--text);
+  font-weight: 700;
+  display: block;
+}
+
+.parrainage-card p {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.parrainage-card p strong { font-size: 0.78rem; color: #34d399; }
+
+.parrainage-plus {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #34d399;
+  flex-shrink: 0;
+}
+
+.parrainage-footer {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.5;
+  border-top: 1px solid rgba(16,185,129,0.15);
+  padding-top: 0.75rem;
+}
+
+.parrainage-footer strong { color: #34d399; }
+
 .modal-callout {
   background: rgba(99,102,241,0.08);
   border: 1px solid rgba(99,102,241,0.2);
